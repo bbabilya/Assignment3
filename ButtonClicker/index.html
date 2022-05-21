@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-options">
+                <h1>Dojonary</h1>
+                <input type = "text" placeholder = "Search">
+                <button id= "user_status" onclick="change(this)">Login</button>
+            </div>
+        </div>
+        <div class="column1">
+            <div class="dictionary-entry">
+                <div class="word-entry">
+                    <h1>ninja</h1>
+                    <h2>noun</h2>
+                    <h3>Plural:</h3><h3 class = "plurals">ninjas</h3>
+                    <button id = "likes" onclick = "alert('Ninja was liked!')">37 likes</button>
+                </div>
+                <div class="word-definition">
+                    <p>A practitioner skilled in the <a class = "link" href="x">Japanese</a> art of <a class = "link" href= "x">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="dictionary-entry">
+                <div class="word-entry">
+                    <h1>ninja</h1>
+                    <h2>noun</h2>
+                    <h3>Plural:</h3><h3 class = "plurals">ninjas</h3>
+                    <button onclick ="alert('Ninja was liked!')">37 likes</button>
+                </div>
+                <div class = "word-definition">
+                    <p>A <a class = "link" href = "x">programmer</a> who breaks down problems with <a class = "link" href = "x">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class = "column2">
+            <div class = "add-definition">
+                <p class = "dojonary-statement">Dojonary is defined by <b>YOU</b></p>
+                <button onclick="hide(this)">Add Definition</button>
+            </div>
+            <div class = "floating-image">
+                <img class = "ninja-image" src = "images/ninja-vector.png" alt = "ninja vector provided by vectorportal.com">
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </div>
+</body>
+</html>

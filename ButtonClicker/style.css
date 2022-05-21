@@ -1,0 +1,247 @@
+@font-face {
+    font-family: Magazine;
+    src: url(font/Magazine.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Magazine, Helvetica, Arial, sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 1;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    opacity: 1;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: lightgray;
+    width: 710px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.nav:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+/* Navigation Links & Button */
+.nav-options {
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-indent: 10px;
+}
+
+.nav-options input[type=text] {
+    background-color: black;
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+    text-indent: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.nav-options input[type=text]:hover {
+    background-color: lightgray;
+    color: black;
+    transition-duration: 1s;
+}
+
+.nav-options button {
+    background-color: black;
+    height: 30px;
+    width: 70px;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+}
+
+.nav-options button:hover {
+    background-color: lightgray;
+    color: black;
+    transition-duration: 1s;
+}
+
+/* Left Column */
+.column1 {
+    flex: 1;
+    height: 500px;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+/* Dictionary Entries */
+.dictionary-entry {
+    background-color: lightgray;
+    height: 150px;
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.word-entry {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.word-entry h2 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.word-entry h3 {
+    font-size: 15px;
+}
+
+.plurals {
+    font-style: italic;
+}
+
+.word-entry button {
+    height: 30px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.word-entry button:hover {
+    background-color: lightgray;
+    color: black;
+    transition-duration: 1s;
+}
+
+
+.word-definition {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.dictionary-entry:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+.link {
+    color: red;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+/* Right Column */
+.column2 {
+    flex: 1;
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: column;
+
+}
+
+/* Adding Definitions */
+.add-definition {
+    background-color: lightgray;
+    height: 120px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+
+.add-definition:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+
+.dojonary-statement {
+    font-size: 25px;
+    inline-size: 200px;
+}
+
+.add-definition button{
+    height: 30px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.add-definition button:hover {
+    background-color: lightgray;
+    color: black;
+    transition-duration: 1s;
+}
+
+.floating-image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+/* Ninja Floating Image */
+.ninja-image {
+    width: 70%;
+    opacity: 0.25;
+    transition-duration: 1s;
+}
+
+.ninja-image:hover {
+    opacity: 1;
+    transition-duration: 1s;
+}
