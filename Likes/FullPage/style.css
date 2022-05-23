@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Momcake Bold';
+    src: url(fonts/Momcake_Bold.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Momcake Bold', Arial;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.topnav {
+    width: 600px;
+    display: flex;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.topnav h1 {
+    color: white;
+    margin-left: 14px;
+}
+
+.yourFeed {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.yourFeed h2 {
+    color: black;
+}
+
+.container2 {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+}
+
+.columnLeft {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userCard {
+    width: 140px;
+    height: 240px;
+    background-color: rgb(125, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.5s;
+}
+
+.userCard:hover {
+    box-shadow: inset 0 0 0 2px #ffffff;
+    transition-duration: 0.5s;
+}
+
+.userCard img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.userCard a {
+    color: black;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.userCard a:hover {
+    border-color: white;
+    transition-duration: 0.5s;
+}
+
+.columnRight {
+    flex: 1;
+}
+
+.comment {
+    width: 440px;
+    background-color: rgb(125, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+
+.comment:hover {
+    box-shadow: inset 0 0 0 2px #ffffff;
+    transition-duration: 0.5s;
+}
+
+.likes { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 6px;
+}
+
+.likesOptions {
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.likes h1{ 
+    transition-duration: 0.5s;
+}
+
+.likes h1:hover {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.likes button {
+    width: 70px;
+    margin-right: 4px;
+    background-color: white;
+    border-style: none;
+    transition-duration: 0.5s;
+}
+
+.likes button:hover {
+    color:rgb(125, 0, 0);
+    transition-duration: 0.5s;
+}
+
+.commentSection {
+    margin-left: 4px;
+    overflow: scroll;
+    height: 100px;
+
+}
